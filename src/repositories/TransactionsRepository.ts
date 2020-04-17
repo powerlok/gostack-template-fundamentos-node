@@ -6,6 +6,12 @@ interface Balance {
   total: number;
 }
 
+interface Request {
+  title: string;
+  value: number;
+  type: 'income' | 'outcome';
+}
+
 interface AllTransactions {
   transactions: Transaction[];
   balance: Balance;
